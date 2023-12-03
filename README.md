@@ -14,7 +14,7 @@ This project automates the deployment of a Kubernetes cluster on AWS using the e
    * web1.yourDomainName
    * web2.yourDomainName
 5. kubectl apply -f ingress-nginx.yml deploy-v1.yml deploy-v2.yml ingress.yml
-6. in route 53craete 2 records:
+6. in route 53 craete 2 records:
     both of the will be a type "A" and point into the NLB that the nginx controller made with alias.
    * the first sub domain will be: web1.
    * and the second domain will be: web2.
